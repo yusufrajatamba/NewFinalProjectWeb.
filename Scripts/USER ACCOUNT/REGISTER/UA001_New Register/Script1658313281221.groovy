@@ -43,15 +43,17 @@ WebUI.waitForAlert(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Kotakoki  Welcome to my Website/menuMy account'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/li_Dashboard'), 2)
+if (true) {
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/li_Dashboard'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Orders'), 2)
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Orders'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Downloads'), 2)
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Downloads'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Addresses'), 2)
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Addresses'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Payment methods'), 2)
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Payment methods'), 2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Account details'), 2)
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Page_menu my account/a_Account details'), 2)
+}
 

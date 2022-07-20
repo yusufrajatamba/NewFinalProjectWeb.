@@ -20,13 +20,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('USER ACCOUNT/REGISTER/UA001_New Register'), [('Username01') : Username01, ('password1') : password1], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_myaccount/Page_yusuf9989  Kotakoki/a_Logout'), 3)
+if (true) {
+    WebUI.verifyElementPresent(findTestObject('Page_myaccount/Page_yusuf9989  Kotakoki/a_Logout'), 3)
 
-WebUI.click(findTestObject('Page_myaccount/Page_yusuf9989  Kotakoki/a_Logout'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('Page_myaccount/Page_yusuf9989  Kotakoki/a_Logout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Login/span_Login'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.verifyElementPresent(findTestObject('Page_Login/span_Login'), 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.comment('Web Tidak berhasil Login, dikarenakan menu tidak berubah')
+    WebUI.comment('Web Tidak berhasil Login, dikarenakan menu tidak berubah')
 
-WebUI.closeBrowser()
+    WebUI.closeBrowser()
+}
 
